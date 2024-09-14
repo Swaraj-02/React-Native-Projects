@@ -20,7 +20,7 @@ const TextInputWithLabel = ({
     <View style={{...styles.inputField, ...inputStyle}}>
       <Text style={styles.labelTxt}>{label}</Text>
       <TextInput placeholder={placeHolder} style={styles.inputTxt} {...props} />
-      {/* <Image source={imgPath.hideEye} />  */}
+      <Image source={imgPath.showEye} />
       {/* Working on show and hide eye in PW TODO  */}
     </View>
   );
