@@ -5,4 +5,6 @@ export default {
   arrowBack: require('../assets/images/arrowback.png'),
   arrowForward: require('../assets/images/arrowforward.png'),
   locationIcon: require('../assets/images/location.png'),
+  checkboxIcon: require('../assets/images/checkbox.png'),
+  inactiveCheckboxIcon: require('../assets/images/inactivecheckbox.png'),
 };

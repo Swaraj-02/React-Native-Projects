@@ -1,16 +1,20 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, Image} from 'react-native';
 import {moderateScale, scale} from 'react-native-size-matters';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
-const ButtonComp = ({btnTxt, btnStyle = {}, onPress = () => {}}) => {
+const ButtonComp = ({btnTxt, btnStyle = {}, onPress = () => {}, img}) => {
   return (
     <TouchableOpacity
       activeOpacity={0.8}
       onPress={onPress}
       style={{...styles.btnStyle, ...btnStyle}}>
-      <Text style={styles.btnTxt}>{btnTxt}</Text>
+      {!!img ? (
+        <Image style={styles.btnImg} source={img} />
+      ) : (
+        <Text style={styles.btnTxt}>{btnTxt}</Text>
+      )}
     </TouchableOpacity>
   );
 };
@@ -30,5 +34,9 @@ const styles = StyleSheet.create({
     color: colors.whiteColor,
     fontWeight: fonts.fontWeight700,
     textTransform: 'uppercase',
+  },
+  btnImg: {
+    width: moderateScale(30),
+    height: moderateScale(30),
   },
 });

@@ -6,6 +6,8 @@ import styles from './style';
 import ButtonComp from '../../components/ButtonComp';
 import navigationString from '../../constants/navigationString';
 
+// Work in with selected choose account TODO:
+
 const ChooseAccount = ({navigation}) => {
   return (
     <SafeAreaView style={{flex: 1}}>
