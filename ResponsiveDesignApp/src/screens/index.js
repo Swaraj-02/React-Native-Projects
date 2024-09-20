@@ -7,3 +7,5 @@ export {default as SetPW} from './setPassword/SetPW';
 
 // Main stack screens
 export {default as Home} from './home/Home';
+export {default as Booking} from './booking/Booking';
+export {default as Profile} from './profile/Profile';

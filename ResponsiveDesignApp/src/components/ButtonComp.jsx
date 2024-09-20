@@ -4,7 +4,13 @@ import {moderateScale, scale} from 'react-native-size-matters';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
-const ButtonComp = ({btnTxt, btnStyle = {}, onPress = () => {}, img}) => {
+const ButtonComp = ({
+  btnTxt,
+  btnStyle = {},
+  onPress = () => {},
+  img,
+  btnTxtStyle = {},
+}) => {
   return (
     <TouchableOpacity
       activeOpacity={0.8}
@@ -13,7 +19,7 @@ const ButtonComp = ({btnTxt, btnStyle = {}, onPress = () => {}, img}) => {
       {!!img ? (
         <Image style={styles.btnImg} source={img} />
       ) : (
-        <Text style={styles.btnTxt}>{btnTxt}</Text>
+        <Text style={{...styles.btnTxt, ...btnTxtStyle}}>{btnTxt}</Text>
       )}
     </TouchableOpacity>
   );

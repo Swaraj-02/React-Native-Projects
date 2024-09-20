@@ -5,4 +5,7 @@ export default {
   FORGET_PASSWORD: 'ForgetPW',
   SET_PASSWORD: 'SetPW',
   HOME: 'Home',
+  BOOKING: 'Booking',
+  PROFILE: 'Profile',
+  TAB_ROUTES: 'TabRoutes',
 };

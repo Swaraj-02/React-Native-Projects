@@ -7,4 +7,7 @@ export default {
   locationIcon: require('../assets/images/location.png'),
   checkboxIcon: require('../assets/images/checkbox.png'),
   inactiveCheckboxIcon: require('../assets/images/inactivecheckbox.png'),
+  homeIcon: require('../assets/images/homeicon.png'),
+  bookingIcon: require('../assets/images/bookingicon.png'),
+  profileIcon: require('../assets/images/profileicon.png'),
 };
